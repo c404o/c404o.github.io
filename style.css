@@ -1,0 +1,72 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+  color: #d7d7d7;
+}
+
+#r {
+  float:right;
+}
+
+#play,
+#pause {
+	float: right;
+	width: 25px;
+}
+#play:hover,
+#pause:hover {
+	cursor: pointer;
+}
+#pause {
+	display: none;
+}
+
+.cerc {
+border: 1px outset #eee;
+padding: 7px;
+margin-bottom: 10px;
+}
+
+.cerc2 {
+border: 1px outset #eee;
+padding: 7px;
+margin-bottom: 10px;
+}
+
+#s {
+  padding-left: 5px;
+  float: left;
+  padding-right:20px;
+}
+
+img {
+display: block;
+}
+
+#l {
+  padding-right: 5px;
+  float: right;
+}
+
+.heart {
+  position: fixed;
+  font-size: 1.5rem;
+  top: -1vh;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  from {
+     transform: translateY(0vh) translateX(-10vw);
+  }
+  to {
+     transform: translateY(105vh) translateX(10vw);
+  }
+}
