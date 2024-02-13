@@ -3,11 +3,13 @@
 
 @media (min-width:320px)  {
 body {zoom:-2px;}
+}
 @media (min-width:481px)  {
 body {zoom:-2px;}
+}
 @media (min-width:641px)  {
 body {zoom:-2px;}
-    }
+}
 
 * {
   box-sizing: border-box;
