@@ -1,14 +1,36 @@
+
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 
-
-@media (min-width:320px)  {
-body {zoom:-2px;}
+@media (max-width:320px)  {
+  #not {
+  font-size:2vw;
+  }
+  #play,
+  #pause {
+  	float: right;
+  	width: 2vw;
+  }
 }
-@media (min-width:481px)  {
-body {zoom:-2px;}
+@media (max-width:481px)  {
+  #not {
+    font-size:2vw;
+  }
+  #play,
+  #pause {
+  	float: right;
+  	width: 2vw;
+  }
 }
-@media (min-width:641px)  {
-body {zoom:-2px;}
+@media (max-width:641px)  {
+  #not {
+    font-size:2vw;
+  }
+  #play,
+  #pause {
+  	float: right;
+  	width: 3vw;
+  }
 }
 
 * {
@@ -18,17 +40,95 @@ body {zoom:-2px;}
 body {
   background: #222;
   color: #d7d7d7;
-  font-size:17px
+  font-size:2vw;
 }
 
-#r {
-  float:right;
+#m1 {
+  width:25vw;
+  height:35vw;
+  background-image: url("res/1.jpg");
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px outline #eee;
+  padding:7px;
+  outline-offset:-10px
+}
+
+#m2 {
+  width:25vw;
+  height:35vw;
+  background-image: url("res/7.jpg");
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px outline #eee;
+  padding:7px;
+  outline-offset:-10px
+}
+
+#m3 {
+  width:25vw;
+  height:35vw;
+  background-image: url("res/3.jpg");
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px outline #eee;
+  padding:7px;
+  outline-offset:-10px
+}
+
+#m4 {
+  width:25vw;
+  height:35vw;
+  background-image: url("res/4.jpg");
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px outline #eee;
+  padding:7px;
+  outline-offset:-10px
+}
+
+#m5 {
+  width:25vw;
+  height:35vw;
+  background-image: url("res/6.jpg");
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px outline #eee;
+  padding:7px;
+  outline-offset:-10px
+}
+
+#m6 {
+  width:25vw;
+  height:35vw;
+  background-image: url("res/5.jpg");
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px outline #eee;
+  padding:7px;
+  outline-offset:-10px
+}
+
+div {
+  white-space: normal;
+}
+
+#center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 #play,
 #pause {
 	float: right;
-	width: 25px;
+	width: 3vw;
 }
 #play:hover,
 #pause:hover {
@@ -38,31 +138,26 @@ body {
 	display: none;
 }
 
-.cerc {
-border: 1px outset #eee;
-padding: 7px;
-margin-bottom: 10px;
-}
-
-.cerc2 {
-border: 1px outset #eee;
-padding: 7px;
-margin-bottom: 10px;
-}
+.outer {
+       outline: 10px solid #333;
+       border: 1px solid #333;
+       background-color: #333;
+       }
 
 #s {
   padding-left: 5px;
   float: left;
-  padding-right:20px;
-}
-
-img {
-display: block;
+  padding-right:5px;
 }
 
 #l {
   padding-right: 5px;
   float: right;
+  padding-left:5px;
+}
+
+img {
+display: block;
 }
 
 .heart {
@@ -81,3 +176,5 @@ display: block;
      transform: translateY(105vh) translateX(10vw);
   }
 }
+
+/* written by akakadir cr:akakadir.online */
