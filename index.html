@@ -5,42 +5,73 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link href="style.css" rel="stylesheet"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap" rel="stylesheet">
-<title>Ç404&#128420;</title>
+<title>
+Balım'a &#128157;
+</title>
+<style>
+
+.loader {
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 9999;
+background-color: #111;
+background-image: url("img/loading.gif");
+flex-direction: column;
+background-position:center;
+background-repeat: no-repeat;
+}
+
+</style>
 </head>
-<body style="font-family:Noto Sans Mono">
-  <body>
-<img id="play" onclick="toggleAudio()" src="https://images2.imgbox.com/05/b5/OcN0v8nX_o.png" class="img-fluid" alt="Responsive image"><audio id='player' src='1.mp3'></audio>
-<img id="pause" onclick="toggleAudio()" src="https://images2.imgbox.com/94/47/ABm8SOWP_o.png" class="img-fluid" alt="Responsive image">
+<body style="font-family:Verdana">
+
+<div class="loader"></div>
+<script>
+window.onload = function()
+{$('.loader').fadeOut();}
+</script>
+
+<img id="play" onclick="toggleAudio()" src="src/play.png" class="img-fluid">
+<audio id='player' src='src/1.mp3'></audio>
+<img id="pause" onclick="toggleAudio()" src="src/pause.png" class="img-fluid">
 <span style="float:right">Okurken Dinle:</span>
-</body>
+
 <br>
 <br>
-<br>
+
 <div id="s">
-<div id=m3 class="outer"></div>
-<div id=m4 class="outer"></div>
-<div id=m5 class="outer"></div>
+<div id="m3" class="outer"></div>
+<br>
+<div id="m4" class="outer"></div>
+<br>
+<div id="m5" class="outer"></div>
 </div>
 <div id="l">
-<div id=m2 class="outer"></div>
-<div id=m1 class="outer"></div>
-<div id=m6 class="outer"></div>
+<div id="m2" class="outer"></div>
+<br>
+<div id="m1" class="outer"></div>
+<br>
+<div id="m6" class="outer"></div>
 </div>
+
 <center>
-<span id="not">07.04.2023 benim hayatımda asla unutamayacağım birgün. O zamanlar seninle yeni yeni samimi olmaya başlamıştık, hayatımın en iyi günlerinden biriydi. Başlarda çok iyi ilerlerken, aramızda anlaşmazlıklar oldu, küstüğümüz oldu, yeri geldi birbirimizden nefret ettik ama hep sonunda bir araya geldik. Bunlara rağmen en başından beri seni sevmeyi asla bırakmadım.</span>
 <br><br>
-<span id="not">Seni sevmek papatyaların hangi mevsim olursa olsun açmak için bahane üretmesi bir nevi. Seni sevmek ciddi mesele bi'tanem.</span>
+<span id="not">07.04.2023 benim hayatımda asla unutamayacağım birgün. O zamanlar seninle yeni yeni samimi olmaya başlamıştık, hayatımın en iyi günlerinden biriydi. Başlarda çok iyi ilerlerken, aramızda anlaşmazlıklar oldu, küstüğümüz oldu, yeri geldi birbirimizden nefret ettik ama hep sonunda bir araya geldik. Bunlara rağmen en başından beri seni sevmeyi asla bırakmadım.</span></div>
 <br><br>
-<span id="not">Hem canımın acıyacağını hemde unutamayacağımı bile bile seni sevmek risktir. Ama ben hayatım boyunca bu riski göze alabilirim. Canımı acıt, ben yine sana gelirim. Hissettiklerimin şarkısı sadece senin sesin. Ve ben bu şarkıyı sadece senin sesinden dinlerim.</span>
+<span id="not">Seni sevmek papatyaların hangi mevsim olursa olsun açmak için bahane üretmesi bir nevi. Seni sevmek ciddi mesele bi'tanem.</span></div>
 <br><br>
-<span id="not">Senin canın yansa acır benim yüreğim. seni sevmenin nasıl bir duygu olduğunu sana açıklayamam ben. Ama sana sevginim en güzel halini her gün sana yeniden aşık olarak hissettirebilirim.</span>
+<span id="not">Hem canımın acıyacağını hemde unutamayacağımı bile bile seni sevmek risktir. Ama ben hayatım boyunca bu riski göze alabilirim. Canımı acıt, ben yine sana gelirim. Hissettiklerimin şarkısı sadece senin sesin. Ve ben bu şarkıyı sadece senin sesinden dinlerim.</span></div>
+<br><br>
+<span id="not">Senin canın yansa acır benim yüreğim. seni sevmenin nasıl bir duygu olduğunu sana açıklayamam ben. Ama sana sevginim en güzel halini her gün sana yeniden aşık olarak hissettirebilirim.</span></div>
 <br><br>
 <span id="not">Ve tüm bunları hissetmeye doymaz kalbin...</span>
+<br><br>
 </center>
-<script src="main.js"></script>
+
+<script src="src/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 </html>
